@@ -11,42 +11,70 @@
     <a href="#" class="back-button"><span class="arrow">&#8592; Back</span></a>
 
     <!--Bagian Form-->
-    <div class="container-sm mt-5" style="width: 950px; height: 700px; background-color: rgba(0, 0, 0, 0.4);">
-        <form class="mx-5 my-5" style="height: 900px;">
-          <h5 class="text-white text-center">Reserve Your Table Here!</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="firstName"></label>
-                <input type="text" class="form-control rounded-0" id="firstName" placeholder="First Name" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="lastName"></label>
-                <input type="text" class="form-control rounded-0" id="lastName" placeholder="Last Name" required>
-              </div>
+    <div class="container-sm mt-5" style="width: 950px; height: 790px; background-color: rgba(0, 0, 0, 0.4);">
+      <form class="mx-5 my-5" style="height: 900px" id="reservationForm">
+        <h5 class="text-white text-center">Reserve Your Table Here!</h5>
+
+        <!--First name n Last name-->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="firstName"></label>
+              <input type="text" class="form-control rounded-0" id="firstName" placeholder="First Name" required>
             </div>
           </div>
-          <div class="form-group">
-            <label for="email"></label>
-            <input type="email" class="form-control" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="lastName"></label>
+              <input type="text" class="form-control rounded-0" id="lastName" placeholder="Last Name" required>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="phone"></label>
-            <input type="tel" class="form-control rounded-0" id="phone" placeholder="Phone Number" required pattern="[0-9]{12}">
-          </div>
-          <div class="form-group">
-            <label for="date"></label>
-            <input type="date" class="form-control rounded-0" id="date">
-          </div>
-          <div class="form-group">
-            <label for="time"></label>
-            <input type="time" class="form-control rounded-0" id="time">
-          </div>
-          <button type="submit" class="btn btn-warning btn-block rounded-0">Submit</button>
-        </form>
+        </div>
+        <!--First name n Last name-->
+
+        <!--Email-->
+        <div class="form-group">
+          <label for="email"></label> 
+          <input type="email" class="form-control rounded-0" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <div class="invalid-feedback"></div> 
+        </div>
+        <!--Email-->
+
+        <!--Phone Number-->
+        <div class="form-group">
+          <label for="phone"></label> 
+          <input type="tel" class="form-control rounded-0" id="phone" placeholder="Phone Number" required pattern="[0-9]{12}">
+          <div class="invalid-feedback">Please enter a valid 12-digit phone number.</div> 
+        </div>
+        <!--Phone Number-->
+
+        <!--Date-->
+        <div class="form-group">
+          <label for="date"></label> 
+          <input type="date" class="form-control rounded-0" id="date">
+        </div>
+        <!--Date-->
+
+        <!--Time-->
+        <div class="form-group">
+          <label for="time"></label> 
+          <input type="time" class="form-control rounded-0" id="time">
+        </div>
+         <!--Time-->
+
+         <!--Party size-->
+        <div class="form-group">
+          <label for="partySize"></label>
+          <input type="number" class="form-control rounded-0" id="partySize" placeholder="Party size (in number, example: 2)" required>
+        </div>    
+         <!--Party size-->
+         
+         <!--Button-->
+        <button type="button" class="btn btn-warning btn-block rounded-0" id="submitBtn">Submit</button>
+        <!--Button-->
+      </form>
       </div>
      <!--Bagian Form end-->
+     <script src="validationReservation.js"></script>
 </body>
 </html>

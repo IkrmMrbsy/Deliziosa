@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Quicksand&display=swap');
+
+body {
+    display: flex;
+    background-image: url(ticket.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+    height: 120vh;
+    margin: 0;
+}
+
+.back-button {
+    text-decoration: none;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #F2F4F5;
+}
+
+.ticket {
+    position: absolute;
+    background-color: rgba(32, 31, 31, 0.849);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 600px;
+}
+
+.img-fluid {
+    background-color: #F2F4F5;
+}
+
+.text-center {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #F2F4F5;
+}
+
+
+@media (max-width: 768px) {
+    .ticket {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .ticket {
+        width: 90%;
+        height: 550px;
+    }
+}

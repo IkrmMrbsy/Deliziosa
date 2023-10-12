@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Quicksand&display=swap');
+
+body {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Quicksand', serif;
+}
+
+.navbar {
+    width: 100% !important;
+    position: fixed;
+}
+
+.acme {
+    font-family: 'Acme', serif !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-semidark {
+    background: rgba(28, 28, 28, 0.829);
+}
+
+nav {
+    transition: .3s;
+}
+
+.btn-reservation {
+    color: #664D03 !important;
+}
+
+#hero {
+    background: url("../asset/img/hero.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+#hero > .container, #hero {
+    height: 100vh;
+}
+
+#brand-hero {
+    font-size: 8vw;
+}
+
+.btn-warning:hover, .nav-link:hover {
+    background: none !important;
+    color: #F5BA08 !important;
+}
+
+.booking-btn {
+    width: 100%;
+}
+
+#about-us {
+    padding: 200px 0 !important;
+    margin-top: -10px;
+}
+
+#about-us > .container > .content {
+    margin-top: 100px !important;
+}
+
+#about-us > .container > .content > .d-flex > p {
+    text-align: justify;
+}
+
+#gallery {
+    margin-top: 100px;
+}
+
+.line {
+    width: 0;
+    height: 4px;
+    left: -50%;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+}
+
+.menu-link:hover > p > a {
+    transition: 0.3s;
+}
+
+.menu-link:hover > .line {
+    transition: 0.3s;
+}
+
+.menu-link:hover > p > a {
+    color: #F5BA08 !important;
+}
+
+.menu-link:hover > .line {
+    width: 45%;
+}
+
+.gallery-images {
+    flex-wrap: wrap;
+}
+
+.img-gallery {
+    height: 200px;
+    transition: 0.3s;
+}
+
+.img-gallery:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.74) !important;
+}
+
+.img-gallery-1 {
+    background: url("../asset/img/gallery/carissa-gan-KSXvrqKUxnc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 15%;
+}
+
+.img-gallery-2 {
+    background: url("../asset/img/gallery/kate-townsend-hEC6zxdFF0M-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.img-gallery-3 {
+    background: url("../asset/img/gallery/klara-kulikova-WcV2YkM3Dls-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
+#testimonials {
+    margin-top: 200px;
+}
+
+#testimonials-container {
+    width: 80%;
+    margin: 100px 8vw 0 8vw;
+    padding-bottom: 20px;
+}
+
+.card > img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card {
+    min-width: 400px !important;
+}
+
+#recognition {
+    margin-top: 100px;
+}
+
+.img-awards {
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+}
+
+#contact {
+    margin-top: 200px;
+}
+
+#contact-title {
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+}
+
+.fs-4vw {
+    font-size: 4vw;
+}
+
+#location {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+.social-media-icon {
+    width: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #brand-hero {
+        font-size: 8vw;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    #brand-hero {
+        font-size: 15vw;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    #brand-hero {
+        font-size: 20vw;
+    }
+
+    .img-gallery-1 {
+        background: url("../asset/img/gallery/carissa-gan-KSXvrqKUxnc-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 30%;
+    }
+    
+    .img-gallery-2 {
+        background: url("../asset/img/gallery/kate-townsend-hEC6zxdFF0M-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+    
+    .img-gallery-3 {
+        background: url("../asset/img/gallery/klara-kulikova-WcV2YkM3Dls-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+    }
+
+    #title-contact {
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    br {
+        display: none !important;
+    }
+    
+    form {
+        margin-top: 30px;
+    }
+
+    #title-gallery {
+        text-align: center;
+    }
+
+    #title-testimonials {
+        font-size: 6.5vw !important;
+    }
+
+    #testimonials-container {
+        margin-top: 50px;
+    }
+
+    footer > .container {
+        flex-direction: column !important;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .social-media-icon {
+        width: 20px;
+    }
+}

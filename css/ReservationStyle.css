@@ -7,7 +7,7 @@ h5{
 
 body{
     display: flex;
-    background-image: url(reservation.png);
+    background-image: url("../asset/img/reservation.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

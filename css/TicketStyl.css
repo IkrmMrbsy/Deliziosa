@@ -2,7 +2,7 @@
 
 body {
     display: flex;
-    background-image: url(ticket.png);
+    background-image: url("../asset/img/ticket.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,8 +29,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 80px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 60%;
     max-width: 600px;
 }

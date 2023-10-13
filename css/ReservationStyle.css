@@ -19,6 +19,7 @@ body{
     position: absolute;
     top: 35px;
     left: 150px;
+    color: #F2F4F5;
 }
 
 .back-button .arrow{
@@ -38,6 +39,10 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 } */
 
+.container-sm {
+    margin-top: 100px;
+}
+
 .form-control{
     height: 45px;
     width: 908px;
@@ -49,6 +54,42 @@ body{
     width: 100%;
     height: 54px;
     margin-top: 35px;
+}
+
+.btn-warning:hover {
+    background: none !important;
+    color: #F5BA08 !important;
+}
+
+@media only screen and (max-width:768px) {
+    .arrow {
+        display: none;
+    }
+
+    .back-button {
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 25px;
+        transition: .3s;
+    }
+
+    .back-button:hover {
+        color: #F5BA08;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .container-sm {
+        background: none !important;
+    }
+
+    .border {
+        border: none !important;
+    }
+
+    .back-button {
+        top: 15%;
+    }
 }
 
 

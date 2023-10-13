@@ -9,13 +9,14 @@ body {
     font-family: 'Quicksand', sans-serif;
     height: 120vh;
     margin: 0;
+    padding-bottom: 10vh !important;
 }
 
 .back-button {
     text-decoration: none;
     position: absolute;
     font-family: 'Quicksand', sans-serif;
-    top: 90px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
@@ -45,12 +46,17 @@ body {
 
 
 @media (max-width: 768px) {
+    .back-button {
+        top: 5%;
+    }
+
     .ticket {
         width: 70%;
     }
 }
 
 @media (max-width: 576px) {
+
     .ticket {
         width: 90%;
         height: 550px;

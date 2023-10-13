@@ -20,11 +20,15 @@ body{
     top: 35px;
     left: 150px;
     color: #F2F4F5;
+    transition: .3s;
 }
 
 .back-button .arrow{
     color: #F2F4F5;
     width: 37px;
+}
+.back-button:hover {
+    color: #F5BA08;
 }
 
 
@@ -69,11 +73,6 @@ body{
     .back-button {
         left: 50%;
         transform: translateX(-50%);
-        transition: .3s;
-    }
-
-    .back-button:hover {
-        color: #F5BA08;
     }
 }
 

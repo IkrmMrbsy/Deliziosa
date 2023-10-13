@@ -21,6 +21,11 @@ body {
     transform: translateX(-50%);
     font-size: 14px;
     color: #F2F4F5;
+    transition: .3s;
+}
+
+.back-button:hover {
+    color: #F5BA08;
 }
 
 .ticket {

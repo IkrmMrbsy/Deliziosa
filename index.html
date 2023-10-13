@@ -68,7 +68,9 @@
               Eat <span class="text-warning">well</span>, be
               <span class="text-warning">happy</span>
             </h2>
-            <a class="text-decoration-none d-block mt-4" href="ReservationPage.html"
+            <a
+              class="text-decoration-none d-block mt-4"
+              href="ReservationPage.html"
               ><button
                 type="button"
                 class="btn btn-warning rounded-0 text-warning-emphasis booking-btn fs-4 border border-warning"
@@ -285,7 +287,7 @@
               </div>
             </div>
             <div class="col-lg-5 col-md-6 mt-sm-4 mt-md-0">
-              <form>
+              <form class="contact-form">
                 <div class="mb-3">
                   <input
                     type="email"
@@ -293,6 +295,8 @@
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required
                   />
                   <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
@@ -305,6 +309,7 @@
                       placeholder="Type here..."
                       id="floatingTextarea2"
                       style="height: 100px"
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -410,6 +415,7 @@
       </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contactvalidation.js"></script>
     <script>
       const navbar = document.querySelector("nav");
       window.onscroll = () => {
